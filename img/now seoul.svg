@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668.28 73.34">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        font-family: PalatinoLinotype-Bold, 'Palatino Linotype';
+        font-size: 63.38px;
+        font-weight: 700;
+        opacity: .33;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 54.37) scale(.81 1)"><tspan x="0" y="0">NOW IN SEOUL FESTI</tspan><tspan class="cls-1" x="690.94" y="0">V</tspan><tspan x="734.2" y="0">AL</tspan></text>
+</svg>
