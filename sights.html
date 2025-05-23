@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/sight_source/favicon.png"
+    />
+    <title>명소안내</title>
+    <!--font_awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--jQuery-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!--gsap-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/sightsstyle.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <h1>
+        <a href="index.html"
+          ><img src="img/sight_source/header_logo.png" alt=""
+        /></a>
+      </h1>
+      <ul class="pc_menu">
+        <li><a href="index.html" data-text="Home">Home</a></li>
+        <li><a href="region.html" data-text="서울소개">서울소개</a></li>
+        <li><a href="event.html" data-text="축제 & 행사">축제 & 행사</a></li>
+        <li><a href="sights.html" data-text="명소안내">명소안내</a></li>
+      </ul>
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="modal_menu">
+        <ul class="mo_menu">
+          <li><a href="index.html" data-text="Home">Home</a></li>
+          <li><a href="region.html" data-text="서울소개">서울소개</a></li>
+          <li><a href="event.html" data-text="축제 & 행사">축제 & 행사</a></li>
+          <li><a href="sights.html" data-text="명소안내">명소안내</a></li>
+        </ul>
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--container-->
+    <main class="container">
+      <!--visual-->
+      <section class="visual">
+        <img
+          src="img/sight_source/visual.jpg"
+          alt="핑크색 노을이 지는 서울시 전체 풍경"
+        />
+        <h2 class="title">명소안내</h2>
+        <h2 class="en">SEOULSIGHTS</h2>
+      </section>
+      <!--con01-->
+      <section class="con01">
+        <div class="wrap">
+          <div class="txtWrap big_txt">
+            <h3 class="seoul b_txt">서울 속 명소,</h3>
+            <h3 class="trip b_txt">당신의 여행이 되다</h3>
+            <p class="text b_txt">서울의 특별한 매력을 찾는 여행</p>
+          </div>
+          <div class="startWrap">
+            <div class="start">
+              <h3>START</h3>
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--con02-->
+      <section class="con02">
+        <p class="title">고도 서울, 옛 길을 걷다</p>
+        <ul class="wrap">
+          <li class="on">
+            <video class="on" autoplay muted loop>
+              <source
+                src="img/sight_source/con01_mov1.mp4"
+                alt="서울 궁궐 영상"
+              />
+            </video>
+            <div class="text on">
+              <h3>서울, 시간의 궁을 걷다</h3>
+              <p>
+                서울엔 다섯 개의 궁궐이 조용히 시간을 품고 서 있습니다.
+                경복궁부터 경희궁까지, 각기 다른 매력과 역사를 지닌 공간들. 왕의
+                발자취가 머문 돌계단, 고요한 정원의 바람결. 도심 속에서 만나는
+                조선의 숨결은 특별한 여정이 됩니다. 이제, 궁궐의 문을 열고 시간
+                여행을 떠나보세요.
+              </p>
+            </div>
+          </li>
+          <li>
+            <video autoplay muted loop>
+              <source
+                src="img/sight_source/con01_mov2.mp4"
+                alt="서울 한옥마을 동영상"
+              />
+            </video>
+            <div class="text">
+              <h3>한옥, 쉼이 머무는 곳</h3>
+              <p>
+                서울의 한복판에서 만나는 고요한 시간. 한옥은 소리 없이 계절을
+                담고, 햇살과 바람을 길 위에 내려놓습니다. 기와지붕 아래 흐르는
+                시간은 빠르지 않고, 마음도 덩달아 느려집니다. 이곳은 단순한
+                건축물이 아닌, 삶의 흔적이 머문 공간입니다. 잠시 멈춰 서서, 쉼이
+                다녀간 자리를 느껴보세요.
+              </p>
+            </div>
+          </li>
+          <li class="con02_river">
+            <video autoplay muted loop>
+              <source
+                src="img/sight_source/con01_mov3.mp4"
+                alt="서울 한강 동영상"
+              />
+            </video>
+            <div class="text">
+              <h3>서울의 강, 서울의 빛</h3>
+              <p>
+                해 질 무렵, 노을이 비치는 수면 위로 도시가 물들어요. 한강은
+                서울을 비추는 거울이자, 사람들의 마음을 비추는 강입니다.
+                사계절의 색을 담아 흐르고, 그 속엔 수많은 추억과 이야기들이
+                떠다닙니다. 서울의 중심에, 감성이 흐릅니다.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--con03-->
+      <section class="con03">
+        <h2 class="title">지금 서울에선 이게 대세!</h2>
+        <!--circle-->
+        <ul class="circle">
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic1.jpg"
+              alt="성수동 도로 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>성수동</span>, 핫플이 되다</p>
+              <h2>POP UP STORE</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                🧃
+                <span>성수동</span>
+                POP UP STORE
+              </h2>
+              <p>
+                성수동은 변화와 창조가 끊임없이 교차하는 동네입니다. 낡은 공장과
+                창고 사이에서 새로움을 제안하는 팝업스토어들은 오늘의 감각을
+                담아냅니다. 무심한 듯 세련된 거리 풍경 속에서, 익숙함과 낯섦이
+                공존하는 순간을 경험하게 됩니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic2.jpg"
+              alt="노포 맛집 중 한 곳 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>오래된 맛집</span>, 힙해지다</p>
+              <h2>OLD IS GOLD</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                🍲
+                <span>노포맛집</span>
+                OLD BUT GOLD
+              </h2>
+              <p>
+                긴 세월을 견디며 자리를 지켜온 노포는 단순한 식당을 넘어 시간의
+                풍경이 됩니다. 변하지 않는 손맛, 한결같은 공간 속에서 사람들은
+                마음까지 따뜻해지는 한 끼를 마주합니다. 세월을 품은 음식은 그
+                자체로 이야기입니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic3.jpg"
+              alt="강남 별마당 전체 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>별마당</span>, 책이 머무는 공간이 되다</p>
+              <h2>BOOK & SPACE</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                📚
+                <span>별마당 도서관</span>
+                BOOK & BEYOND
+              </h2>
+              <p>
+                도심 한가운데 펼쳐진 책의 숲, 별마당 도서관은 독서와 사유의
+                공간입니다. 커다란 서가 사이로 스며드는 빛과 고요함 속에서,
+                방문자는 스스로를 돌아보게 됩니다. 단순한 도서관을 넘어 영감이
+                머무는 장소입니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic4.jpg"
+              alt="홍대놀이터 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>홍대</span>, 감성이 춤추다</p>
+              <h2>YOUTH CULTURE</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                🎧
+                <span>홍대</span>
+                YOUTH VIBE
+              </h2>
+              <p>
+                홍대는 젊음과 창작의 에너지가 살아 숨 쉬는 거리입니다. 거리
+                공연, 예술 시장, 낙서와 포스터 속에 이곳만의 언어가 존재합니다.
+                자유로운 표현과 끊임없는 실험은 홍대를 동시대 감성의 중심으로
+                이끕니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic5.jpg"
+              alt="동대문 ddp 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>DDP</span>, 디자인이 흐르다</p>
+              <h2>DESIGN FLOW</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                🌀
+                <span>동대문 DDP</span>
+                URBAN WAVE
+              </h2>
+              <p>
+                동대문디자인플라자는 도시 건축의 흐름과 감각을 집약한
+                상징입니다. 곡선으로 이루어진 외관과 다양한 전시, 그리고 시민의
+                움직임이 조화를 이루며 도시의 새로운 물결을 만들어냅니다. 서울의
+                진보적 얼굴이라 할 수 있습니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic6.jpg"
+              alt="잠실 롯데타워 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>잠실</span>, 도심의 설렘이 되다</p>
+              <h2>URBAN DAY</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>🎡<span>잠실</span>LANDMARK DAY</h2>
+              <p>
+                잠실은 서울의 스카이라인을 품은 상징적인 장소입니다. 석촌호수에
+                비친 도시의 윤곽, 한강의 바람을 따라 걷는 여유, 그리고 수직으로
+                뻗은 랜드마크는 이 도시의 현재를 말해줍니다. 여유와 활기가
+                균형을 이루는 공간입니다.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="img/sight_source/con02_pic7.jpg"
+              alt="실내 미술관 이미지"
+            />
+            <div class="txtWrap front">
+              <p><span>예술</span>, 일상이 되다</p>
+              <h2>ART IN SEOUL</h2>
+            </div>
+            <div class="txtWrap back">
+              <h2>
+                🖼️
+                <span>미술관</span>
+                MIND GALLERY
+              </h2>
+              <p>
+                미술관은 감정을 비추는 거울이자, 삶의 또 다른 장면을 보여주는
+                창입니다. 작품 앞에 선 순간, 무언가가 내면을 조용히 흔듭니다.
+                예술은 말보다 깊이 닿으며, 그 여운은 오랜 시간 마음에 머뭅니다.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!--page-->
+        <div class="page">
+          <div class="info" id="info">
+            <p class="count">01</p>
+            <p>07</p>
+          </div>
+          <div class="buttons">
+            <i id="leftBtn" class="fa-solid fa-angle-left"></i>
+            <i id="rightBtn" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!--con04-->
+      <section class="con04">
+        <div class="title">
+          <p>서울 여행에 대한 기본 정보를 한눈에</p>
+          <h3>서울 여행 정보</h3>
+        </div>
+        <ul class="list">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>가이드 북&지도</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-ticket"></i>
+              <p>공연 예매하기</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-person-walking-luggage"></i>
+              <p>도보해설관광</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--fixed-->
+    <div class="fixed">
+      <img src="img/sight_source/circle_txt.png" alt="동그란 모양의 글자" />
+      <div class="bg"></div>
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <ul>
+        <!--logo-->
+        <li>
+          <h1>
+            <a href="index.html">
+              <img
+                src="img/sight_source/main_logo.png"
+                alt="서울메이트 메인로고"
+              />
+            </a>
+          </h1>
+        </li>
+        <!--address-->
+        <li>
+          <p>
+            서울 강서구 화곡로 149 3<br />
+            대표이메일 seoulmate@seoulmate.co.kr<br />
+            COPYRIGHT SEOULMATE. ALL RIGHTS RESERVED.
+          </p>
+        </li>
+        <!--sns-->
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-message"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--script-->
+    <script src="js/sightscustom.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hi098123/prism-for-tistory/prism.js"></script>
+  </body>
+</html>
